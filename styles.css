@@ -1,0 +1,219 @@
+body {
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font: 18px Arial, sans-serif;
+    font-weight: 600;
+}
+nav ul li:hover {background-color: red; }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+}
+
+.body h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.body p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.mainbtn:hover {
+    background-color: #000;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+
+.movies {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.movie {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.movie:last-child {
+    margin-right: 0;
+}
+
+.movie-details {
+    padding: 10px;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.movie-info {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+.moviebtn:hover {
+    background-color: #000;
+}
+
+.image-container {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*bookMovie*/
+.booking {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ticket-details {
+    margin-bottom: 20px;
+}
+
+.ticket-selection select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.ticket-details p {
+    font-size: 18px;
+}
+
+
+/*Seating*/
+
+.seating-layout {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.screen {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    color: #f44336;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: skyblue;
+    border: 2px solid wheat;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 0.5rem;
+}
+
+.seat.selected {
+    background-color: #f44336; /* Highlight selected seat */
+}
+
+.seat-legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.legend-item span {
+    margin-left: 5px;
+}
+
+.subtotal {
+    margin-top: 20px;
+}
+
+.mainbtn {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
